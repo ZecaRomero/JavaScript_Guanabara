@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+
+    <style>
+        body {
+            background: rgba(25, 19, 142, 0.553);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <h3>Document Objetc Model</h3>
+    <p>Aqui vai o resultado</p>
+
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em Mim</div>
+
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1] //Quando tem mais de 1 objeto
+        window.document.write ('Está aparecendo assim :  '  +  p1.innerText)
+        p1.style.color = 'yellow'
+
+    </script>
+    
+</body>
+</html>
