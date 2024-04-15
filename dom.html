@@ -21,13 +21,24 @@
     <p>Aqui vai o resultado</p>
 
     <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em Mim</div>
+
+    <div class="msg">Clique em Mim</div>
 
     <script>
 
-        var p1 = window.document.getElementsByTagName('p')[1] //Quando tem mais de 1 objeto
+        var corpo = window.document.body
+
+        var p1 = document.getElementsByTagName('p')[1] //Quando tem mais de 1 objeto
         window.document.write ('Está aparecendo assim :  '  +  p1.innerText)
         p1.style.color = 'yellow'
+        
+        /* var d =document.getElementById('msg') // está selecionando a DIV com a id msg
+        d.style.background = 'green'
+        d.innerText ='Estou aguardando'
+        */
+
+        var d = document.querySelector('div.msg')
+        d.style.background = 'blue'
 
     </script>
     
